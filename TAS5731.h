@@ -95,6 +95,7 @@ const tas_register DDX_CH_IDF_POST_SCALE{0x62, 4};
 const tas_register DDX_CH_DEV_ADDR_ENABLE{0xF8, 4};
 const tas_register DDX_CH_DEV_ADDR_UPDATE{0xF9, 4};
 
+
 struct register_data
 {
        tas_register reg;
@@ -184,9 +185,9 @@ public:
        /**
          * @brief read ERROR_STATUS REGISTER (0X02) for error;
          * 
-
+         * 
          * @return error code
-       */
+         */
        uint16_t ceck_error();
 
        // TO REMOVE
